@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chat 2025A
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Mostrar los formularios guardados -->
+  <ion-list>
+    <ion-item *ngFor="let form of formDataList">
+      <ion-label>
+        <h3>Formulario Guardado</h3>
+        <p>Campo 1: {{ form.campo1 }}</p>
+        <p>Campo 2: {{ form.campo2 }}</p>
+        <p>Campo 3: {{ form.campo3 }}</p>
+        <p>Campo 4: {{ form.campo4 }}</p>
+        <p>Campo 5: {{ form.campo5 }}</p>
+        <p>Campo 6: {{ form.campo6 }}</p>
+        <p>Campo 7: {{ form.campo7 }}</p>
+        <p>Campo 8: {{ form.campo8 }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Formulario de entrada -->
+  <form (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="formData.campo1" name="campo1" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input [(ngModel)]="formData.campo2" name="campo2" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Dirección</ion-label>
+      <ion-input [(ngModel)]="formData.campo3" name="campo3" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input [(ngModel)]="formData.campo4" name="campo4" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input [(ngModel)]="formData.campo5" name="campo5" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Edad</ion-label>
+      <ion-input [(ngModel)]="formData.campo6" name="campo6" required></ion-input>
+    </ion-item>
+    <!-- Datepicker -->
+<ion-item>
+  <ion-label position="stacked">Fecha de nacimiento</ion-label>
+  <ion-datetime
+    display-format="DD/MM/YYYY"
+    [(ngModel)]="formData.campo7"
+    name="campo7"
+    required>
+  </ion-datetime>
+</ion-item>
+
+<!-- Selección múltiple (por ejemplo: hobbies) -->
+<ion-item>
+  <ion-label position="stacked">Hobbies</ion-label>
+    <ion-select
+      [(ngModel)]="formData.campo8"
+      name="campo8"
+      multiple="true"
+      required>
+      <ion-select-option value="Leer">Leer</ion-select-option>
+      <ion-select-option value="Deportes">Deportes</ion-select-option>
+      <ion-select-option value="Música">Música</ion-select-option>
+      <ion-select-option value="Viajar">Viajar</ion-select-option>
+    </ion-select>
+
+
+  </ion-item>
+
+
+    <ion-button expand="full" type="submit" [disabled]="!formValid()">Enviar</ion-button>
+  </form>
+</ion-content>
