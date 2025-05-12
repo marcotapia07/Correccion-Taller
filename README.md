@@ -17,9 +17,11 @@ Este proyecto es una **aplicación móvil desarrollada con Ionic + Angular**, qu
 
 > 🔽 Agrega estas imágenes en una carpeta `/assets` y reemplaza los enlaces.
 
-| Formulario | Lista de formularios |
+| Formulario | Codigos |
 |-----------|----------------------|
-| ![Formulario](./assets/formulario.png) | ![Lista](./assets/lista-formularios.png) |
+| ![image](https://github.com/user-attachments/assets/8445b72c-bcc2-46c3-a131-d6451807252c)
+ | ![image](https://github.com/user-attachments/assets/c57449e0-593a-42a6-a01e-eb3771a6f628)
+ |
 
 ---
 
