@@ -15,13 +15,15 @@ Este proyecto es una **aplicación móvil desarrollada con Ionic + Angular**, qu
 
 ## 📸 Capturas de Pantalla
 
-> 🔽 Agrega estas imágenes en una carpeta `/assets` y reemplaza los enlaces.
+![image](https://github.com/user-attachments/assets/d5ca7c7f-277f-4f48-a0f7-56a56ba0fcaa)
+![image](https://github.com/user-attachments/assets/36411bd7-d3b7-4e79-bac9-7ece0c6813aa)
+![image](https://github.com/user-attachments/assets/853b83f0-249d-4d6d-ac9e-a1bbe2794be9)
+![image](https://github.com/user-attachments/assets/48304b1a-2577-495f-8633-7ebcf1478c12)
 
-| Formulario | Codigos |
-|-----------|----------------------|
-| ![image](https://github.com/user-attachments/assets/8445b72c-bcc2-46c3-a131-d6451807252c)
- | ![image](https://github.com/user-attachments/assets/c57449e0-593a-42a6-a01e-eb3771a6f628)
- |
+
+
+
+
 
 ---
 
